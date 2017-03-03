@@ -3,7 +3,7 @@ require('regenerator-runtime/runtime');
 const io = require('socket.io-client');
 io.Socket = require('./socket');
 io.connect = (() => {
-  let lookup = io.connect;
+  const lookup = io.connect;
 
   return (uri, opts = {}) => {
     opts.path = opts.path || '/bono';
@@ -12,5 +12,5 @@ io.connect = (() => {
 })();
 io.socket = new io.Socket();
 
-window.io = io;
+this.io = io;
 module.exports = io;
