@@ -2,7 +2,7 @@
   "name": "bono-io",
   "version": "1.0.0",
   "description": "Socket IO connection for node-bono",
-  "main": "index.js",
+  "main": "client.js",
   "scripts": {
     "dev": "webpack --watch",
     "build": "webpack && webpack --env production",
