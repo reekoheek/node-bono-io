@@ -4,7 +4,7 @@ const webpack = require('webpack');
 module.exports = (env = 'development') => {
   return {
     entry: {
-      io: './index.js',
+      io: './client.js',
     },
     output: {
       path: path.join(__dirname, 'dist'),
